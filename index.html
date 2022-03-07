@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle financeiro</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <header>
+      <h1>Controle Financeiro</h1>
+    </header>
+
+    <main>
+      <div class="saldo">R$ 200,00</div>
+      <div class="botoes">
+        <button id="btn-receita">Receita</button>
+        <button id="btn-despesa">Despesas</button>
+      </div>
+    </main>
+
+    <div class="modal-receita" id="receitas">
+      <h3>RECEITAS</h3>
+      <form id="form">
+        <input id="desc" type="text" placeholder="Descrição" autocomplete="off" required />
+        <input id="valor" type="text" placeholder="Valor" autocomplete="off" required />
+        <input class="btn" type="submit" value="Lançar" />
+        <input class="btn btn-cancelar" id="btn-cancelar-receita" type="reset" value="Cancelar" />
+      </form>
+    </div>
+
+    <div class="modal-despesas" id="despesas">
+      <h3>DESPESAS</h3>
+      <form id="form">
+        <input id="desc" type="text" placeholder="Descrição" autocomplete="off" required />
+        <input id="valor" type="text" placeholder="Valor" autocomplete="off" required />
+        <input class="btn" type="submit" value="Lançar" />
+        <input class="btn btn-cancelar" id="btn-cancelar-despesa" type="reset" value="Cancelar" />
+      </form>
+    </div>
+
+    <footer>
+      <p>Todos direitos reservados 2022 © Vignoto Tecnologia</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
